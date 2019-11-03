@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Hunter Hackley | INFO 2349 | Applied Challenge #1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="_css/appliedchallenge.css">
+    <link rel="stylesheet" href="_css/themes/theme1.css">
+    <link rel="stylesheet" href="_css/themes/jquery.mobile.icons.min.css">
+
+    
+  </head>
+
+  <body>
+    <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     10/13/19
+-->
+    
+
+      <div data-role="page" id="Milestone 3">
+        <div data-role="header">
+            <a data-ajax="false" href="../index.html" data-icon="home" rel="external">Home</a>
+            <p style="text-align:center;"><img src="img/documents.png" alt="Documentation"></p>
+            <div class="topnav">
+          </div>
+        </div>
+        <div data-role="main" class="ui-content">
+          <h1>Milestone 3</h1>
+          <form method="post" action="https://emthoendel.faculty.mccinfo.net/2439/bistrosurvey_insert.php">
+            <input name="recipient" type="hidden" value="hkhackley@mail.mccneb.edu">
+
+            <div class="ui-field-contain">
+                    <button type="button" class="collapsible">Css Documentation</button>
+                    <div class="content">
+                      <p>My css hopefully will play a huge role in the looks of my application <br>
+                        It will help in the long run for mobile device compatability. <br>
+                        I believe i have a good start towards a good mobile application.
+                      </p>
+                    </div>
+                    <br>
+                    <button type="button" class="collapsible">Applied Challenge 2 Milestone 1 Project Scope</button>
+                    <div class="content">
+                      <p><li><a href="https://docs.google.com/document/d/18LASVVsRv7ErZWRjH1lOLqlvsMme0LkgzB3eLy-kZkM/edit?usp=sharing">Project Scope</a></li></p>
+                    </div>
+                    <br>
+                    <button type="button" class="collapsible">Applied Challenge 2 Milestone 2 Wire Frame, User Story Map</button>
+                    <div class="content">
+                      <p><li><a href="https://app.moqups.com/4yVeX8BB5K/view">Wireframe</a></li></p><br>
+                      <li><a href="https://miro.com/app/board/o9J_kwAX-u0=/">User Story</a></li>
+                    </div>
+                    <br>
+                    <button type="button" class="collapsible">GitHub Repository</button>
+                    <div class="content">
+                      <p><li><a href="https://github.com/2439-Fall-2019/challenge-2-Hkhackley/tree/tree">Github</a></li></p>
+                    </div>
+                    <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+                    
+                            for (i = 0; i < coll.length; i++) {
+                              coll[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                  content.style.display = "none";
+                                } else {
+                                  content.style.display = "block";
+                                }
+                              });
+                            }</script>
+            <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Contact: <a href="mailto:hkhackley@mail.mccneb.edu" class="ui-btn-active">Hunter H</a></div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+  </body>
+
+</html>
