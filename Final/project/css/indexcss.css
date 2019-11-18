@@ -1,0 +1,42 @@
+.ui-block-a{
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.ui-block-b{
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: Calibri;
+    min-width: 25%;
+    color: pink;
+    padding: 85px 85px;
+}
+
+.ui-block-c{
+    min-width: 15%;
+    max-width: 25%;
+    text-align: center;
+    
+}
+
+.indexbutton{
+    font-family: Calibri;
+    float: center;
+    padding: 14px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 50%;
+    positon: fixed;
+}
+
+#homePage{
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url('../img/splash.png');
+    
+
+}

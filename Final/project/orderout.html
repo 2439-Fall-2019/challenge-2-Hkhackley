@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hunter Hackley | INFO 2349 | Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="finalproject.css">
+    <link rel="stylesheet" href="css/themes/final.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>
+    <link rel="icon" sizes="57x57" href="img/57x57.png">
+    <link rel="icon" sizes="76x76" href="img/76x76.png">
+    <link rel="icon" sizes="120x120" href="img/120x120.png">
+    <link rel="icon" sizes="152x152" href="img/152x152.png">
+    <link rel="icon" sizes="180x180" href="img/180x180.png">
+    <link rel="icon" sizes="192x192" href="img/190x190.png">
+</head>
+
+<body>
+    <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     11/5/19
+-->
+    <div data-role="page" id="finalproject">
+        <div data-role="header">
+            <a data-ajax="false" href="../index.html" data-icon="home" rel="external">Home</a>
+            <br>
+            <header>Wheel O' Food</header>
+            <br>
+            <div class="nav">
+                <a data-ajax="false" href="page1.html">Fine Dining</a>
+                <a data-ajax="false" href="fastfood.html">Fast Food</a>
+                <a data-ajax="false" href="orderout.html">Order</a>
+                <a data-ajax="false" href="module8/milestone3.html">Documentation</a>
+            </div>
+        </div>
+
+        <body>
+            <h1>Ordering Food</h1>
+
+            <img src="img/OrderWheel.png" id="wheel"><br>
+            <br>
+            <img src="img/peg.png" id="peg"><br>
+
+            <button id="button">Spin</button>
+    
+            <script>// Cache our elements.
+                var wheel = document.querySelector("#wheel"),
+                    button = document.querySelector("#button"),
+            
+                    // Initialise a random number variable. As zero.
+                    rando = 0;
+            
+                // When we click the button...
+                var spin_wheel = function () {
+            
+                    // Generate a random number that'll determine how many degrees the wheel spins.
+                    // We want it to spin 8 times (2880 degrees) and then land somewhere, so we'll add between 0 and 360 degrees to that.
+                    // We add this to the already-created "rando" variable so that we can spin the wheel multiple times.
+                    rando += (Math.random() * 360) + 2880;
+            
+                    // And spin the wheel to the random position we just generated!
+                    // Gotta cover ourselves with vendor prefixes.
+                    wheel.style.webkitTransform = "rotate(" + rando + "deg)";
+                    wheel.style.mozTransform = "rotate(" + rando + "deg)";
+                    wheel.style.msTransform = "rotate(" + rando + "deg)";
+                    wheel.style.transform = "rotate(" + rando + "deg)";
+            
+                }
+            
+                button.addEventListener("click", spin_wheel, false);</script>
+                <audio src="msc/music.mp3" id="my_audio" loop="loop"></audio>
+                <script type="text/javascript">
+                  window.onload=function(){
+                    document.getElementById("my_audio").play();
+                  }
+                </script>
+              <p>Test Your Luck, Spin the Wheel O' Food!</p>
+</body>
+<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Contact: <a
+        href="mailto:hkhackley@mail.mccneb.edu" class="ui-btn-active">Hunter H</a></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
